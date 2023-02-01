@@ -48,7 +48,6 @@ body {
 
 .books {
     background-color: var(--dark-blue);
-    display: flex;
 }
 
 .add-btn {
@@ -145,6 +144,40 @@ input, select {
 #submit:hover {
     cursor: pointer;
 }
+
+.books {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin: 0 30px 30px 30px;
+}
+
+.cardStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-blue);
+    color: white;
+    margin: 0px;
+    font-size: 12px;
+    border-radius: 7px; 
+}
+
+.books button {
+    font-size: 16px;
+    font-weight: lighter;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 6px 10px 6px 10px;
+}
+
+.books button:hover {
+    cursor: pointer;
+}
+
+
 
 
 
